@@ -11,12 +11,9 @@ namespace Mod4BasicOfC
         static void Main(string[] args)
         {
             {
-                int A;
-                int B;
-                double X;
-                double Y;
-
-                bool C = (A < B) | (X > Y);
+                var inv = true;
+                var result = !inv;
+                Console.WriteLine(result);
                 Console.ReadKey();
             }
         }
