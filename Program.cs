@@ -10,6 +10,14 @@ namespace Mod4BasicOfC
     {
         static void Main(string[] args)
         {
+            {
+                string A;
+                string B;
+                bool C = A != B;
+
+                Console.WriteLine(C);
+                Console.ReadKey();
+            }
         }
     }
 }
