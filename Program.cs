@@ -11,11 +11,12 @@ namespace Mod4BasicOfC
         static void Main(string[] args)
         {
             {
-                string A;
-                string B;
-                bool C = A != B;
+                int A;
+                int B;
+                double X;
+                double Y;
 
-                Console.WriteLine(C);
+                bool C = (A < B) | (X > Y);
                 Console.ReadKey();
             }
         }
