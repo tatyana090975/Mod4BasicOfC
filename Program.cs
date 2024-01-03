@@ -14,7 +14,7 @@ namespace Mod4BasicOfC
                 var a = 6;
                 var b = 7;
 
-                if (a == b)
+                if (a != b)
                 {
                     Console.WriteLine("Условие истинно");
                 }
