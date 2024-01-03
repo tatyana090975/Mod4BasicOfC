@@ -35,7 +35,7 @@ namespace Mod4BasicOfC
                     Console.BackgroundColor = ConsoleColor.Cyan;
                     Console.ForegroundColor = ConsoleColor.Black;
 
-                    Console.WriteLine("Your color is cyan!");
+                    Console.WriteLine("Your  color is cyan!");
                 }
                 Console.ReadKey();
             }
