@@ -14,11 +14,14 @@ namespace Mod4BasicOfC
             string name = Console.ReadLine();
 
             char[] namearr = name.ToCharArray();
+
+            int i = namearr.Length;
                         
-            foreach (char i in namearr)
+            for (; i >= 1; i--)
             {
-                Console.Write($"{i} ");
+                Console.Write($"{namearr[i - 1]} ");
             }
+            
             Console.Write("Последняя буква вашего имени: {0}", namearr[namearr.Length - 1]);
             
 
