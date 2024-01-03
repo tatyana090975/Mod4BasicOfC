@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,34 +8,17 @@ namespace Mod4BasicOfC
 {
     internal class Program
     {
-        
         static void Main(string[] args)
         {
-            var arr = new int[] { 5, 6, 9, 1, 2, 3, 4 };
-            var arr2 = new int[arr.Length];
+            int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, { 11, 12, 13 } };
 
-            int temp;
-
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 0; i < array.GetUpperBound(1) + 1; i++)
             {
-                for (int j = i + 1; j < arr.Length; j++)
-                {
-                    if (arr[i] > arr[j])
-                    {
-                        temp = arr[i];
-                        arr[i] = arr[j];
-                        arr[j] = temp;
-                    }
-                    
+                for (int k = 0; k < array.GetUpperBound(0) + 1; k++)
+                    Console.Write(array[k, i] + " ");
 
-                }
+                Console.WriteLine();
             }
-            foreach (var item in arr)
-                {
-                    Console.Write(item);
-                }
-            
-
 
 
             Console.ReadKey();
