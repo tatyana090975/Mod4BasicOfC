@@ -10,49 +10,21 @@ namespace Mod4BasicOfC
     {
         static void Main(string[] args)
         {
-            string[] favcolors = new string[3];
+            Console.WriteLine("Введите свое имя");
+            string name = Console.ReadLine();
 
-            for (int i = 0; i < favcolors.Length; i++)
+            char[] namearr = name.ToCharArray();
+                        
+            foreach (char i in namearr)
             {
-                Console.WriteLine("Введите любимый цвет номер {0}", i + 1);
-                favcolors[i] = Console.ReadLine();
+                Console.Write($"{i} ");
             }
-
-            foreach (var color in favcolors)
-            {
-                switch (color)
-                {
-                    case "red":
-                        Console.BackgroundColor = ConsoleColor.Red;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is red!");
-                        break;
-
-                    case "green":
-                        Console.BackgroundColor = ConsoleColor.Green;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is green!");
-                        break;
-
-                    case "cyan":
-                        Console.BackgroundColor = ConsoleColor.Cyan;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is cyan!");
-                        break;
-                    default:
-                        Console.BackgroundColor = ConsoleColor.Yellow;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is yellow!");
-                        break;
-                }
+            Console.Write("Последняя буква вашего имени: {0}", namearr[namearr.Length - 1]);
+            
 
 
-                Console.ReadKey();
-            }
+             Console.ReadKey();
+         
         }
     }
 }
