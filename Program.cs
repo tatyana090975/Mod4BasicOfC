@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,19 +11,21 @@ namespace Mod4BasicOfC
     {
         static void Main(string[] args)
         {
-            int[][] array = new int[3][];
+            int[] array = new int[] {1, 2, 3, 4, 5, 6, -5, -6 };
 
-            array[0] = new int[2] { 1, 2 };
-            array[1] = new int[3] { 1, 2, 3 };
-            array[2] = new int[5] { 1, 2, 3, 4, 5 };
+            int summ = 0;
 
-            foreach (var num in array)
+            for (int i = 0; i < array.Length; i++)
             {
-                foreach (var item in num)
+                if (array[i] > 0)
                 {
-                    Console.Write(item + " ");
+                    summ += 1;
                 }
             }
+
+                     
+            Console.WriteLine(summ);
+            
             Console.ReadKey();
          
         }
