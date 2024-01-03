@@ -10,24 +10,20 @@ namespace Mod4BasicOfC
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите свое имя");
-            string name = Console.ReadLine();
+            int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, { 11, 12, 13 } };
 
-            char[] namearr = name.ToCharArray();
-
-            int i = namearr.Length;
-                        
-            for (; i >= 1; i--)
+            for (int i = 0; i < array.GetUpperBound(1) + 1; i++)
             {
-                Console.Write($"{namearr[i - 1]} ");
+                for (int k = 0; k < array.GetUpperBound(0) + 1; k++)
+                    Console.Write(array[k, i] + " ");
+
+                Console.WriteLine();
             }
-            
-            Console.Write("Последняя буква вашего имени: {0}", namearr[namearr.Length - 1]);
-            
 
 
-             Console.ReadKey();
+            Console.ReadKey();
          
         }
     }
 }
+
