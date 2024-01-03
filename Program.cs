@@ -14,19 +14,9 @@ namespace Mod4BasicOfC
                 var a = 6;
                 var b = 7;
 
-                if (a == b && b > 1)
-                {
-                    Console.WriteLine("Условие истинно");
-                }
+                var c = a != b ? a + b : b;
 
-                else if (b > 10 || b == 7)
-                {
-                    Console.WriteLine("Значение b = {0} больше 10 или равно 7", b);
-                }
-                else
-                {
-                    Console.WriteLine("Значение b = {0}", b);
-                }
+                Console.WriteLine(c);
                 Console.ReadKey();
             }
         }
