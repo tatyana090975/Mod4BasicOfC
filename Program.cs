@@ -13,18 +13,17 @@ namespace Mod4BasicOfC
     {
         static void Main(string[] args)
         {
-            (string name, string type, double age) pet;
+            (string name, string type, double age, int nameCount) pet;
             Console.WriteLine("Введите имя питомца: ");
             pet.name = Console.ReadLine();
             Console.WriteLine("Введите вид питомца: ");
             pet.type = Console.ReadLine();
             Console.WriteLine("Введите возраст питомца: ");
             pet.age = Convert.ToDouble(Console.ReadLine());
-            
-
-            
-            Console.WriteLine($"Имя вашего питомца: {pet.name}\nВид вашего питомца: {pet.type}\nВозраст вашего питомца: {pet.age}");
-                           
+            pet.nameCount = pet.name.Length;
+                        
+            Console.WriteLine($"Имя вашего питомца: {pet.name}\nВид вашего питомца: {pet.type}\nВозраст вашего питомца: {pet.age}\nДлина имени питомца: {pet.nameCount}");
+                         
                     
                         
             Console.ReadKey();
