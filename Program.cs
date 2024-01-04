@@ -5,6 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Mod4BasicOfC
 {
@@ -12,16 +13,17 @@ namespace Mod4BasicOfC
     {
         static void Main(string[] args)
         {
-            var (name, age) = ("skdvk", 27);
-            Console.WriteLine("Введите свое имя: ");
-
-            name = Console.ReadLine();
-            Console.WriteLine("Введите свой возраст: ");
-            age = Convert.ToInt32(Console.ReadLine());
+            (string name, string type, double age) pet;
+            Console.WriteLine("Введите имя питомца: ");
+            pet.name = Console.ReadLine();
+            Console.WriteLine("Введите вид питомца: ");
+            pet.type = Console.ReadLine();
+            Console.WriteLine("Введите возраст питомца: ");
+            pet.age = Convert.ToDouble(Console.ReadLine());
             
 
-            //var anketa = (name, age);
-            Console.WriteLine($"Ваше имя: {name}\nВаш возраст: {age}");
+            
+            Console.WriteLine($"Имя вашего питомца: {pet.name}\nВид вашего питомца: {pet.type}\nВозраст вашего питомца: {pet.age}");
                            
                     
                         
