@@ -32,13 +32,21 @@ namespace Mod4BasicOfC
             {
                 anketa.pet = false;
             }
+            Console.WriteLine("Введите возраст: ");
+            anketa.age = Convert.ToDouble(Console.ReadLine());
+            anketa.favcolors = new string[3];
+            Console.WriteLine("Введите три любимых цвета: ");
+            for (int i = 0; i < 3; i++)
+            {
+                anketa.favcolors[i] = Console.ReadLine();
+            }
             /*
-            Console.WriteLine("Введите возраст питомца: ");
-            pet.age = Convert.ToDouble(Console.ReadLine());
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine(anketa.favcolors[i]);
+            }*/
             
-                        
-            Console.WriteLine($"Имя вашего питомца: {pet.name}\nВид вашего питомца: {pet.type}\nВозраст вашего питомца: {pet.age}\nДлина имени питомца: {pet.nameCount}");
-            */
+           
 
 
             Console.ReadKey();
