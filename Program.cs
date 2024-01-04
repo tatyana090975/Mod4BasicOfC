@@ -14,18 +14,21 @@ namespace Mod4BasicOfC
         static void Main(string[] args)
         {
             (string name, string surname, string login, int loginCount, bool pet, double age, string[] favcolors) anketa;
-            /*Console.WriteLine("Введите имя питомца: ");
-            pet.name = Console.ReadLine();
-            Console.WriteLine("Введите вид питомца: ");
-            pet.type = Console.ReadLine();
+            Console.WriteLine("Введите имя: ");
+            anketa.name = Console.ReadLine();
+            Console.WriteLine("Введите фамилию: ");
+            anketa.surname = Console.ReadLine();
+            Console.WriteLine("Введите логин: ");
+            anketa.login = Console.ReadLine();
+            /*
             Console.WriteLine("Введите возраст питомца: ");
             pet.age = Convert.ToDouble(Console.ReadLine());
             pet.nameCount = pet.name.Length;
                         
             Console.WriteLine($"Имя вашего питомца: {pet.name}\nВид вашего питомца: {pet.type}\nВозраст вашего питомца: {pet.age}\nДлина имени питомца: {pet.nameCount}");
-            */             
-                    
-                        
+            */
+
+
             Console.ReadKey();
          
         }
