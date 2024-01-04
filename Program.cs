@@ -12,13 +12,16 @@ namespace Mod4BasicOfC
     {
         static void Main(string[] args)
         {
+            var (name, age) = ("skdvk", 27);
             Console.WriteLine("Введите свое имя: ");
-            string name = Console.ReadLine();
-            Console.WriteLine("Введите свой возраст: ");
-            int age = Convert.ToInt32(Console.ReadLine());
 
-            var anketa = (name, age);
-            Console.WriteLine($"Ваше имя: {anketa.name}\nВаш возраст: {anketa.age}");
+            name = Console.ReadLine();
+            Console.WriteLine("Введите свой возраст: ");
+            age = Convert.ToInt32(Console.ReadLine());
+            
+
+            //var anketa = (name, age);
+            Console.WriteLine($"Ваше имя: {name}\nВаш возраст: {age}");
                            
                     
                         
