@@ -20,6 +20,8 @@ namespace Mod4BasicOfC
             anketa.surname = Console.ReadLine();
             Console.WriteLine("Введите логин: ");
             anketa.login = Console.ReadLine();
+            anketa.loginCount = anketa.login.Length;
+
             /*
             Console.WriteLine("Введите возраст питомца: ");
             pet.age = Convert.ToDouble(Console.ReadLine());
